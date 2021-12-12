@@ -1,8 +1,8 @@
-#Mikrus CLI
+# Mikrus CLI
 
 It's just simple cli for [mikr.us](https://mikr.us/)
 
-###How to install
+### How to install
 1. Install [GO](https://go.dev/doc/install)
 2. Clone this repository
 3. In same folder where you have main.go execute
@@ -11,7 +11,7 @@ It's just simple cli for [mikr.us](https://mikr.us/)
 
 4. (optional)Add file to PATH
 
-###How to use
+### How to use
 It's required to setup two environment variables. 
 
 ``MIKRUS_SRV`` - server name 
@@ -26,7 +26,7 @@ Without cli added to PATH you have to be in same folder where your mikruscli fil
 
 ``./mikruscli <module>``
 
-###Available modules
+### Available modules
 
 **info**
 
