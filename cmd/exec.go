@@ -1,6 +1,8 @@
 package cmd
 
 import (
+	"encoding/json"
+	"fmt"
 	"io"
 	"log"
 	"mikrus-cli/utils"
@@ -35,5 +37,13 @@ func Exec() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	utils.PrintResponse(string(bodyBytes))
+
+	var output ExecOutput
+	json.Unmarshal([]byte(string(bodyBytes)), &output)
+	fmt.Println("Output:")
+	fmt.Println(output.Output)
+}
+
+type ExecOutput struct {
+	Output string `json:"output"`
 }
