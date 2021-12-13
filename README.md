@@ -2,7 +2,9 @@
 
 It's just simple cli for [mikr.us](https://mikr.us/)
 
-### How to install
+[Download](https://github.com/JakuSw/mikrus-cli/releases/tag/v0.1.0)
+
+### How to compile
 1. Install [GO](https://go.dev/doc/install)
 2. Clone this repository
 3. In same folder where you have main.go execute
