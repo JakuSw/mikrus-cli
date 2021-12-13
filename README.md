@@ -86,4 +86,4 @@ Returns server stats
 
 Returns available TCP/UDP ports
 
-``mikruscli stats``
+``mikruscli porty``
