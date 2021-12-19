@@ -21,9 +21,7 @@ jobs:
       - run: GOOS=darwin GOARCH=amd64 go build-o mikruscli-osx
       - name: Create zip files
         run: |
-          zip mikruscli-linux
-          zip mikruscli-win
-          zip mikruscli-osx
+          zip mikrus-cli.zip mikruscli-linux mikruscli-win mikruscli-osx
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -34,33 +32,13 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: true
-      - name: Upload Windows app
+      - name: Upload App
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./mikruscli-win.zip
-          asset_name: mikruscli-win.zip
-          asset_content_type: application/zip
-      - name: Upload Linux app
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./mikruscli-linux.zip
-          asset_name: mikruscli-linux.zip
-          asset_content_type: application/zip
-      - name: Upload OSX app
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./mikruscli-osx.zip
-          asset_name: mikruscli-osx.zip
+          asset_path: ./mikrus-cli.zip
+          asset_name: mikrus-cli.zip
           asset_content_type: application/zip
