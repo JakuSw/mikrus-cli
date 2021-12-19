@@ -2,7 +2,7 @@
 
 It's just simple cli for [mikr.us](https://mikr.us/)
 
-[Download](https://github.com/JakuSw/mikrus-cli/releases/tag/v0.1.0)
+[Download](https://github.com/JakuSw/mikrus-cli/releases)
 
 ### How to compile
 1. Install [GO](https://go.dev/doc/install)
