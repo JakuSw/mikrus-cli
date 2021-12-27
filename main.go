@@ -23,9 +23,9 @@ func main() {
 		cmd.GetLogs()
 	case "restart":
 		cmd.Restart()
-	case "serwery":
+	case "servers":
 		cmd.GetServers()
-	case "porty":
+	case "ports":
 		cmd.GetPorts()
 	case "db":
 		cmd.Db()
@@ -33,7 +33,7 @@ func main() {
 		cmd.GetStats()
 	case "exec":
 		cmd.Exec()
-	case "amfetamina":
+	case "amph":
 		cmd.Amphetamines()
 	default:
 		utils.ModuleError()

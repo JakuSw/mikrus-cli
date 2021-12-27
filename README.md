@@ -36,11 +36,11 @@ Returns information about server
 
 ``mikruscli info``
 
-**serwery**
+**servers**
 
 Returns list of servers
 
-``mikruscli serwery``
+``mikruscli servers``
 
 **restart**
 
@@ -60,11 +60,11 @@ Returns log by id
 
 ``mikruscli logs <id>``
 
-**amfetamina**
+**amph**
 
 Boost for your server
 
-``mikruscli amfetamina``
+``mikruscli amph``
 
 **db**
 
@@ -84,8 +84,8 @@ Returns server stats
 
 ``mikruscli stats``
 
-**porty**
+**ports**
 
 Returns available TCP/UDP ports
 
-``mikruscli porty``
+``mikruscli ports``
