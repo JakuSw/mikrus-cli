@@ -40,7 +40,6 @@ func Exec() {
 
 	var output ExecOutput
 	json.Unmarshal([]byte(string(bodyBytes)), &output)
-	fmt.Println("Output:")
 	fmt.Println(output.Output)
 }
 
